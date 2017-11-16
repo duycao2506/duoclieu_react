@@ -5,7 +5,7 @@ import theme from 'styles/AppBar.css';
 class Home extends React.Component {
     render(){
         return (
-            <div>
+            <div style={{backgroundColor: "#ffffff", overflow: 'visible'}}>
                 <DNavBar theme={theme}/>
                 <h2>Home</h2>
             </div>
