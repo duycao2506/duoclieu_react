@@ -4,31 +4,34 @@ require ('./DNavBar.css');
 class DNavBar extends React.Component {
     constructor(props, context){
         super(props, context);
-        this.myFunction = this.myFunction.bind(this);
-
+        this.showMenu = this.showMenu.bind(this);
+        this.itemClick = this.itemClick.bind(this);
+        this.items = [];
     }
     render(){
         return (
             <div className="topnav" id="myTopnav" ref={(obj) => { this.myTopnav = obj}} >
-                <a href="#home" className="active">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-                <a href="#" className="icon" onClick={this.myFunction()}>&#9776;</a>
+                <a href="/" className="navlogo"><img src="images/logo.ico"/></a>
+                <a href="/" className="navitem" ref={(obj) => {this.items.push(obj)}} onClick={this.itemClick(event)}>Home</a>
+                <a href="/contact" className="navitem" ref={(obj) => {this.items.push(obj)}}  onClick={this.itemClick(event)}>Contact</a>
+                <a href="/about" className="navitem" ref={(obj) => {this.items.push(obj)}} onClick={this.itemClick(event)}>About</a>
+                <a href="#" className="navigator icon" onClick={this.showMenu()}>&#9776;</a>
             </div>
         )
     }
 
-    myFunction(){
-        console.log(this.myTopnav);
+    showMenu(){
         if (this.myTopnav != undefined){
-            if( this.myTopnav.className === 'topnav') {
-            this.myTopnav.className += ' responsive';
-        } else {
-            this.myTopnav.className = 'topnav';
-        }
+            if  (this.myTopnav.className === 'topnav') {
+                this.myTopnav.className += ' responsive';
+            } else {
+                this.myTopnav.className = 'topnav';
+            }
         } 
+    }
 
+    itemClick(e){
+        alert(e);
     }
 
 }
