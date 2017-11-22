@@ -1,17 +1,18 @@
 import React from 'react'
-
+import DSlides from 'components/views/DSlides/DSlides'
 
 class Home extends React.Component {
     render(){
         return (
             <div>
-                <h2>Home</h2>
+                <DSlides/>
             </div>
         );
     }
 }
 
 Home.defaultProps = {
+    
 };
 
 export default Home;

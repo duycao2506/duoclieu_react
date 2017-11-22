@@ -1,0 +1,7 @@
+.carHolder{
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  z-index: 99;
+  overflow: hidden;
+}
