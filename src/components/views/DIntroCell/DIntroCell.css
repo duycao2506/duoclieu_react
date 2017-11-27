@@ -1,0 +1,30 @@
+.introCell {
+    display: inline-block; 
+    background: #eee;
+    border-radius: 25px;
+    width: 20rem;
+    height: 400px;
+    overflow: hidden;
+    color: #5a3912;
+    margin: 20px 10px 20px 10px;
+}
+
+.introCell:hover{
+    background: #ecb676;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4); 
+    transition: 0.3s;
+}
+
+.introImg {
+    height: 200px;
+    width:  20rem;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.introImg img {
+    width: 25rem;
+    border-radius: 25px;
+    overflow: hidden;
+}
+

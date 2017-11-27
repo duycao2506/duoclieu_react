@@ -12,11 +12,10 @@ class DSlidesEle extends React.Component {
   render(){
     return(
       <div className="imgHolder">
-        <img className="slideEleImg" src="images/yeoman.png"/>
-        <div className="slideEleOverlayer">
-        </div>
-        <h2>SADSA</h2>
-        <p>ewqewqewqewqewq</p>
+        <div className="slideEleBelowlayer" />
+        <img className="slideEleImg" src={'images/' + this.props.image}/>
+        <div className="slideEleOverlayer" />
+        {this.props.children}
       </div>
     );
   }

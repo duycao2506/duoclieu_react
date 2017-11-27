@@ -1,0 +1,8 @@
+.introHolder {
+    background: #fff;
+    height: auto;
+    width: 100%;
+    display: block;
+    z-index: 99;
+    text-align: center;
+}
