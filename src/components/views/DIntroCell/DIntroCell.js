@@ -11,11 +11,15 @@ class DIntroCell extends React.Component {
     return (
       <div className="introCell">
         <div className='introImg'>
+          <span className={'lnr '+ this.props.icon}></span>
+          <div className='introImgOverlay'/>
           <img src = {this.props.image} />
+          <div className='circleBack'></div>
         </div>
+        
         <div className='introText'>
-          <h1> Hello </h1>
-          <p> dsadsadsa </p>
+          <h3> {this.props.title} </h3>
+          <p> {this.props.description} </p>
         </div>
       </div>
     );

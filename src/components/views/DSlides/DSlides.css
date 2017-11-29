@@ -1,8 +1,10 @@
 .carHolder{
   height: 80vh;
   width: 100%;
-  z-index: 99;
+  z-index: 4;
   overflow: hidden;
   display: block;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
   
 }
