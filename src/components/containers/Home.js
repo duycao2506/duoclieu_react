@@ -1,8 +1,11 @@
 import React from 'react'
 import DSlides from 'components/views/DSlides/DSlides'
 
+
 class Home extends React.Component {
-    render(){
+
+	
+	render(){
         return (
             <div>
                 <DSlides/>

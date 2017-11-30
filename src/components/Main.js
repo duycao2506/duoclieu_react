@@ -25,7 +25,6 @@ class AppComponent extends React.Component {
   render() {
     const Navbar = withRouter(DNavBar);
     return (
-      
       <Router>
         <div>
           <Navbar/>
