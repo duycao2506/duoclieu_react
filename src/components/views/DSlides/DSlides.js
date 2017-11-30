@@ -14,9 +14,10 @@ class DSlides extends React.Component {
     return (
       <div  className='carHolder'>
         <Carousel loop widgets={[IndicatorDots]}>
-          <DSlidesEle />
-          <DSlidesEle />
-          <DSlidesEle />
+          <DSlidesEle image='2.jpeg' >
+          </DSlidesEle>
+          <DSlidesEle image='3.jpeg' />
+          <DSlidesEle image='2.jpeg' />
         </Carousel>
       </div>
     );

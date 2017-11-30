@@ -10,17 +10,22 @@
 
 /* Style the links inside the navigation bar */
 .navitem, .navigator, .navitem_selected {
-    float: left;
+    float: right;
     display: block;
-    color: rgb(7, 102, 65);
+    color: rgb(30, 194, 128);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 14px;
 }
 
+.navitem_selected {
+    color: #ecb676;
+}
+
 a:hover {
     text-decoration: none;
+    color: #ecb676;
 }
 
 a:focus {
@@ -44,20 +49,26 @@ a:focus {
 /* Change the color of links on hover */
  
 .navitem::after {
+
+    float: right;
     width: 0px;
-    background: brown;
+    background: #ecb676;
     display: block;
     content : '';
-    height: 3px;
+    height: 16px;
+    
+    margin-left: 4px;
     transition: width .3s;
 }
 
 .navitem_selected::after {
-    width: 20px;
-    background: brown;
+    float: right;
+    margin-left: 4px;
+    width: 4px;
+    background: #ecb676;
     display: block;
     content : '';
-    height: 3px;
+    height: 16px;
     transition: width .3s;
 }
 

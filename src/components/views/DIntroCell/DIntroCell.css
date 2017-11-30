@@ -1,0 +1,88 @@
+.introCell {
+    display: inline-block; 
+    background: #eee;
+    border-radius: 25px;
+    width: 20rem;
+    height: 400px;
+    overflow: hidden;
+    color: #5a3912;
+    margin: 20px 10px 20px 10px;
+}
+
+.introCell:hover{
+    background: #ecb676;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4); 
+    transition: 0.3s;
+}
+
+.introImg {
+    height: 200px;
+    width:  20rem;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 99;
+    position: relative
+}
+
+.introImg img {
+    width: 25rem;
+    border-radius: 25px;
+    overflow: auto;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+}
+
+.introImgOverlay {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background: rgb(41, 39, 39);
+    opacity: 0.7 ;
+    right: 0;
+    top: 0;
+    overflow: auto;   
+    z-index: 3;
+}
+
+.introText h3{
+    font-weight:700;
+}
+
+
+.introText p{
+    font-weight:500;
+    text-align: justify;
+    margin: 0px 24px 10px 24px;
+}
+
+.lnr-bubble, .lnr-store, .lnr-rocket {
+    z-index: 4;
+    top : 76px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(13, 236, 143);
+    font-size: 48px;
+    /* To get crisp results, use sizes that are
+    a multiple of 20; because Linearicons was
+    designed on a 20 by 20 grid. */
+  }
+
+
+
+  .circleBack{
+      z-index:3;
+      top: 52px;
+      border-radius: 48px;
+      left: 110px;
+      opacity: 0.4;
+      position: absolute;
+      background: rgb(29, 0, 0);
+      width: 96px;
+      height: 96px;
+      margin: auto;
+  }

@@ -10,10 +10,10 @@ import {
   Link
 } from 'react-router-dom'
 
-import Home from 'components/containers/Home'
+import Home from 'components/containers/Home/Home'
 import About from 'components/containers/About'
 import Topics from 'components/containers/Topics'
-
+import Footer from 'components/views/Footer/Footer'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router';
 
@@ -31,6 +31,7 @@ class AppComponent extends React.Component {
           <Route exact path="/" component={Home}/>
           <Route path="/about" component={About}/>
           <Route path="/topics" component={Topics}/>
+          <Footer/>
         </div>
       </Router>
     );
