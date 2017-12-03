@@ -8,13 +8,13 @@ import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 
-import Home from 'components/containers/Home/Home'
-import About from 'components/containers/About'
-import Topics from 'components/containers/Topics'
-import Footer from 'components/views/Footer/Footer'
-import PropTypes from 'prop-types'
+import Home from 'components/containers/Home/Home';
+import About from 'components/containers/About';
+import Topics from 'components/containers/Topics';
+import Footer from 'components/views/Footer/Footer';
+import PropTypes from 'prop-types';
 import { withRouter } from 'react-router';
 
 

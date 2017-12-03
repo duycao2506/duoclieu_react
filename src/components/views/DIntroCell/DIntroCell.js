@@ -16,7 +16,6 @@ class DIntroCell extends React.Component {
           <img src = {this.props.image} />
           <div className='circleBack'></div>
         </div>
-        
         <div className='introText'>
           <h3> {this.props.title} </h3>
           <p> {this.props.description} </p>

@@ -18,14 +18,15 @@ class Home extends React.Component {
                     <DIntroCell 
                     image='images/5.jpeg' 
                     title='Cung cấp'
-                    description='Coodsadsadsa dsadsa'
+                    description='SỈ và LẺ các loại dược liệu Đông Y, nhận hốt thuốc thang theo toa, bào chế thuốc đáp ứng yêu cầu. 
+                    Chất lượng thuốc luôn được đảm bảo.'
                     icon='lnr-store'
                     />
                     
                     <DIntroCell 
-                    image='images/6.jpeg' 
+                    image='images/7.jpeg' 
                     title='Giao hàng'
-                    description='Coodsadsadsa dsadsa'
+                    description='Giao hàng miễn phí toàn quốc cho những khách hàng lấy sỉ lâu dài tại nhà thuốc.'
                     icon='lnr-rocket'
                     />
                 </div>
