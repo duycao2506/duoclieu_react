@@ -1,7 +1,9 @@
 require('normalize.css/normalize.css');
 require('styles/App.css');
-import DNavBar from 'components/views/DNavBar'
+
+import DNavBar from 'components/views/NavBar/DNavBar'
 import theme from 'styles/AppBar.css';
+
 
 import React from 'react';
 import {
@@ -12,8 +14,10 @@ import {
 
 import Home from 'components/containers/Home/Home';
 import About from 'components/containers/About';
-import Topics from 'components/containers/Topics';
+import Contact from 'components/containers/Contact/Contact';
 import Footer from 'components/views/Footer/Footer';
+
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router';
 
@@ -25,15 +29,17 @@ class AppComponent extends React.Component {
   render() {
     const Navbar = withRouter(DNavBar);
     return (
-      <Router>
-        <div>
-          <Navbar/>
-          <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/topics" component={Topics}/>
-          <Footer/>
-        </div>
-      </Router>
+      <MuiThemeProvider>
+        <Router>
+          <div>
+            <Navbar/>
+            <Route exact path="/" component={Home}/>
+            <Route path="/about" component={About}/>
+            <Route path="/contact" component={Contact}/>
+            <Footer/>
+          </div>
+        </Router>
+      </MuiThemeProvider>
     );
   }
 }

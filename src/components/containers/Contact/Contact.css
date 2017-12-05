@@ -1,0 +1,144 @@
+.contactPanel{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    z-index: 100;
+}
+
+.firstback{
+    background: #312619;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    left: 0;
+    opacity: 0.8;
+    z-index: 95;
+}
+
+.contactCard img {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 94;
+}
+
+.contactCard{
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    z-index: 99;
+    left: 60%;
+    margin: 0px;
+    overflow: hidden;
+    box-shadow: -4px 0 4px 0px rgba(0, 0, 0, 0.2); 
+    
+}
+
+.contactcontent{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 20%;
+    z-index: 96;
+    text-align: left;
+    overflow: hidden;
+}
+
+.contactcontent h3 {
+    color:rgb(30, 194, 128);
+    margin-left: 12px;
+}
+
+
+.contactcontent h4 {
+    color:#ecb676;
+}
+
+.contactcontent h4::before {
+    float: left;
+    width: 4px;
+    background: #ecb676;
+    display: block;
+    content : '';
+    margin-right: 8px;
+    overflow: hidden;
+    height: 16px;
+}
+
+.contactcontent p {
+    margin-left: 12px;
+    
+    font-family: 'Noto Sans', sans-serif;
+    padding-right: 20%;
+    overflow: hidden;
+    font-weight: 200;
+
+}
+
+.mapView {
+    width: 60%;
+    position: absolute;
+    height: 400px;
+    z-index: 76;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 600px) {
+    .mapView {
+        width: 100%;
+        position: relative;
+        height: 400px;
+    }
+
+    .contactCard{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .contactPanel{
+        height: 800px;
+    }
+  }
+
+  .feebBackPanel{
+      text-align: center;
+      height: auto;
+      width: 100%;
+      background: white;
+      color: #312619;
+      position: relative;
+      z-index: 99;
+  }
+
+  .feebBackPanel h3{
+    text-align: center;
+  }
+
+  .contactContainer{
+      height: 100%;
+      width: 100%;
+      
+  }
+
+  .inputRow {
+      width: 100%;
+      display: block;
+  }
+
+.inputPanel {
+    
+    text-align: left;
+    height: auto;
+    width: 500px;
+    padding: 16px;
+    margin: auto;
+    margin-top: -30px;
+}
