@@ -106,39 +106,41 @@
     .contactPanel{
         height: 800px;
     }
-  }
+}
 
-  .feebBackPanel{
-      text-align: center;
-      height: auto;
-      width: 100%;
-      background: white;
-      color: #312619;
-      position: relative;
-      z-index: 99;
-  }
-
-  .feebBackPanel h3{
+.feebBackPanel{
     text-align: center;
-  }
+    height: auto;
+    width: 100%;
+    background: #eeeeee;
+    color: #312619;
+    position: relative;
+    z-index: 99;
+    padding: 1px;
+}
 
-  .contactContainer{
-      height: 100%;
-      width: 100%;
-      
-  }
+.feebBackPanel h3{
+    text-align: center;
+    margin: 0;
+}
 
-  .inputRow {
-      width: 100%;
-      display: block;
-  }
+.contactContainer{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.inputRow {
+    width: 100%;
+    display: block;
+}
 
 .inputPanel {
-    
+    background: white;
+    border-radius: 16px;
     text-align: left;
     height: auto;
-    width: 500px;
-    padding: 16px;
-    margin: auto;
-    margin-top: -30px;
+    width: auto;
+    padding: 32px;
+    margin: 32px;
 }

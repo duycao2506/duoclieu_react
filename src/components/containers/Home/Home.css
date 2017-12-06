@@ -1,8 +1,9 @@
 .introHolder {
     background: rgb(246, 246, 246);
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     display: block;
     z-index: 99;
     text-align: center;
+    padding: 1px;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import MapView from 'components/views/MapView/MapView'
-import TextField from 'material-ui/TextField';
+import {RaisedButton, TextField} from 'material-ui';
 require ('./Contact.css');
 class Contact extends React.Component {
     render(){
@@ -27,8 +27,9 @@ class Contact extends React.Component {
                     </div>
                 </div>
                 <div className='feebBackPanel'>
-                    <h3>Lời nhắn</h3>
+                    
                     <div className='inputPanel'>
+                        <h3>Lời nhắn</h3>
                         <div className='inputRow' >
                             <p>Họ tên: </p>
                             <TextField
@@ -65,6 +66,10 @@ class Contact extends React.Component {
                             hintText="Bạn muốn để lại lời nhắn gì?"
                             /><br />
                             <br />
+                        </div>
+
+                        <div className='inputRow'>
+                            <RaisedButton label="Gửi"  backgroundColor='rgb(30, 194, 128)' labelColor='#ffffff'  />
                         </div>
                     </div>
                     
