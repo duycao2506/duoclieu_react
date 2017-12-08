@@ -3,7 +3,6 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    font-family: 'Noto Sans', sans-serif;
     z-index: 100;
 }
 
@@ -74,7 +73,6 @@
 .contactcontent p {
     margin-left: 12px;
     
-    font-family: 'Noto Sans', sans-serif;
     padding-right: 20%;
     overflow: hidden;
     font-weight: 200;
@@ -127,7 +125,6 @@
 .contactContainer{
     height: 100%;
     width: 100%;
-    
 }
 
 .inputRow {
