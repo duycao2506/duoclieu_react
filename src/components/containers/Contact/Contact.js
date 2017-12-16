@@ -23,6 +23,8 @@ class Contact extends React.Component {
                             <p>59 Hải Thượng Lãn Ông, Phường 10, Quận 5, TP Hồ Chí Minh</p>
                             <h4>Điện thoại</h4>
                             <p>0909 135 037 - 0909 835 263</p>
+                            <h4>Email</h4>
+                            <p>hiepthanhduochang@gmail.com</p>
                         </div>
                     </div>
                 </div>

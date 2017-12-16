@@ -14,9 +14,9 @@ class DNavBar extends React.Component {
         return (
             <div className="topnav" id="myTopnav" ref={(obj) => { this.myTopnav = obj}} >
                 <a href="/" className="navlogo"><img src="images/logo.ico"/></a>
-                <a href="/about" className={'navitem' + (this.props.location.pathname == '/about' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >About</a>
-                <a href="/contact" className={'navitem' + (this.props.location.pathname == '/contact' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Contact</a>
-                <a href="/" className={'navitem' + (this.props.location.pathname == '/' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Home</a>
+                <a href="/about" className={'navitem' + (this.props.location.pathname == '/about' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Giới thiệu</a>
+                <a href="/contact" className={'navitem' + (this.props.location.pathname == '/contact' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Liên hệ</a>
+                <a href="/" className={'navitem' + (this.props.location.pathname == '/' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Trang chủ</a>
                 <a href="#" className="navigator icon" onClick={this.showMenu()}>&#9776;</a>
             </div>
         )
