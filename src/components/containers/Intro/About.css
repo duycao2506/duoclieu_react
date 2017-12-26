@@ -1,0 +1,44 @@
+.aboutHolder {
+    background: #eeeeee;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    color: gray;
+    
+}
+
+.aboutHolder h2 {
+    position: relative;
+    margin: 0;
+}
+
+.aboutCard{
+    margin: 32px;
+    height: auto;
+    background: white;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+}
+
+.inputRow{
+    width: 100%;
+    display: block;
+}
+
+.sideDeco{
+    margin: 0;
+    display:table-cell;
+    width: 20%;
+    overflow: hidden;
+    background: black;
+}
+
+.textArea{
+    padding: 32px;
+    display:table-cell;
+    width: 60%;
+    height: 100%;
+}

@@ -26,7 +26,7 @@ class Home extends React.Component {
                     <DIntroCell 
                     image='images/7.jpeg' 
                     title='Giao hàng'
-                    description='Giao hàng miễn phí toàn quốc cho những khách hàng lấy sỉ lâu dài tại nhà thuốc.'
+                    description='Giao hàng toàn quốc với chi phí hợp lý cho những khách hàng lấy sỉ lâu dài tại nhà thuốc.'
                     icon='lnr-rocket'
                     />
                 </div>
