@@ -19,6 +19,19 @@
     font-size: 14px;
 }
 
+.navbrand{
+    float: left;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 28px;
+    color: #5e4930;
+    height: 100%;
+    font-family: 'Bungee', cursive;
+    font-weight: 400;
+}
+
 .navitem_selected {
     color: #ecb676;
 }

@@ -14,6 +14,7 @@ class DNavBar extends React.Component {
         return (
             <div className="topnav" id="myTopnav" ref={(obj) => { this.myTopnav = obj}} >
                 <a href="/" className="navlogo"><img src="images/logo.png"/></a>
+                <a href="/" className="navbrand">Hiệp Thành Dược Hãng</a>
                 <a href="/about" className={'navitem' + (this.props.location.pathname == '/about' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Giới thiệu</a>
                 <a href="/contact" className={'navitem' + (this.props.location.pathname == '/contact' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Liên hệ</a>
                 <a href="/" className={'navitem' + (this.props.location.pathname == '/' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Trang chủ</a>
