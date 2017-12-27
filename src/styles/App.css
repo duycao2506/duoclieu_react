@@ -20,3 +20,21 @@ body {
   border-width: 1px 0;
   background: #666;
 }
+
+.radiusPanel {
+  background: white;
+  border-radius: 16px;
+  height: auto;
+  width: auto;
+  padding: 32px;
+  margin: 32px; 
+}
+
+
+.textL {
+  text-align: left;
+}
+
+.textR {
+  text-align: right;
+}

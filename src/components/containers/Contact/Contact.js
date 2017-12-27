@@ -1,7 +1,9 @@
 import React from 'react'
 import MapView from 'components/views/MapView/MapView'
+
 import {RaisedButton, TextField} from 'material-ui';
 require ('./Contact.css');
+require('styles/App.css');
 class Contact extends React.Component {
     render(){
         return (
@@ -28,10 +30,29 @@ class Contact extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className='feebBackPanel'>
+
+                <div className='feedbackPanel'>
+                    <div className='radiusPanel textL' style={{marginBottom: '0'}}>
+                        <h2>Thông tin chuyển khoản</h2>
+                        <h3 id='agrb'>Agribank</h3>
+                        <p>Chi nhánh Bình Thạnh</p>
+                        <p>Chủ tài khoản:   Cao Khắc Lê Duy</p>
+                        <p>Số tài khoản:    6380205262104</p>
+                        <h3 id='vpb'>VP Bank</h3>
+                        <p>Chi nhánh TPHCM</p>
+                        <p>Chủ tài khoản:   Cao Khắc Lê Duy</p>
+                        <p>Số tài khoản:    119988578</p>
+                        <h3 id='techb'>Techcombank</h3>
+                        <p>Chi nhánh Phan Đình Phùng</p>
+                        <p>Chủ tài khoản:   Cao Khắc Lê Duy</p>
+                        <p>Số tài khoản:    19030301701011</p>
+                    </div>    
+                </div>
+
+                <div className='feedbackPanel'>
                     
-                    <div className='inputPanel'>
-                        <h3>Lời nhắn</h3>
+                    <div className='radiusPanel textL'>
+                        <h2>Lời nhắn</h2>
                         <div className='inputRow' >
                             <p>Họ tên: </p>
                             <TextField
@@ -77,6 +98,7 @@ class Contact extends React.Component {
                     
                     
                 </div>
+
             </div>
         );
     }

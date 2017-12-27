@@ -14,7 +14,7 @@
     top: 0;
     overflow: hidden;
     left: 0;
-    opacity: 0.8;
+    opacity: 0.95;
     z-index: 95;
 }
 
@@ -106,7 +106,7 @@
     }
 }
 
-.feebBackPanel{
+.feedbackPanel{
     text-align: center;
     height: auto;
     width: 100%;
@@ -117,10 +117,45 @@
     padding: 1px;
 }
 
-.feebBackPanel h3{
+.feedbackPanel  h2{
     text-align: center;
     margin: 0;
 }
+
+#agrb {
+    color: rgb(197, 3, 3);
+}
+#agrb::before {
+    background: rgb(197, 3, 3);
+}
+
+#vpb {
+    color: rgb(136, 3, 197);
+}
+#vpb::before {
+    background: rgb(136, 3, 197);
+}
+
+#techb {
+    color: rgb(255, 19, 19);
+}
+#techb::before {
+    background: rgb(255, 19, 19);
+}
+
+
+.feedbackPanel h3::before {
+    float: left;
+    width: 8px;
+    background: #ecb676;
+    display: block;
+    content : '';
+    margin-right: 8px;
+    overflow: hidden;
+    height: 16px;
+}
+
+
 
 .contactContainer{
     height: 100%;
@@ -129,15 +164,8 @@
 
 .inputRow {
     width: 100%;
-    display: block;
+    display: inline-block;
 }
 
-.inputPanel {
-    background: white;
-    border-radius: 16px;
-    text-align: left;
-    height: auto;
-    width: auto;
-    padding: 32px;
-    margin: 32px;
-}
+
+

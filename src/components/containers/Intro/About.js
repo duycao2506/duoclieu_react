@@ -1,5 +1,6 @@
 import React from 'react'
-import styles from './About.css';
+require('./About.css');
+require('styles/App.css');
 import {RaisedButton, TextField} from 'material-ui';
 
 class About extends React.Component {
@@ -7,10 +8,9 @@ class About extends React.Component {
         return (
             <div className='aboutHolder'>
 	            <div className='aboutCard'>
-                    <div className='sideDeco'> 
-                        
+                    <div className='sideDeco'>
                     </div>
-                    <div className='textArea'>
+                    <div className='textArea textL'>
                             <h2>Về nhà thuốc</h2>
                             <p>Đầu ti&ecirc;n, nh&agrave; thuốc đ&ocirc;ng y Hiệp Th&agrave;nh xin gửii tới qu&yacute; kh&aacute;ch lời ch&uacute;c sức khoẻ tr&acirc;n trọng nhất. Ch&uacute;ng t&ocirc;i xin c&aacute;m ơn qu&yacute; kh&aacute;ch đ&atilde; y&ecirc;u mến, tin cậy nh&agrave; thuốc trong thời gian qua.&nbsp;</p>
                             <div>&nbsp;</div>
@@ -19,8 +19,12 @@ class About extends React.Component {
                             <div>Ngo&agrave;i việc b&aacute;n thảo dược lẻ, nh&agrave; thuốc cũng l&agrave; nơi cung cấp dược liệu lượng sỉ cho c&aacute;c ph&ograve;ng kh&aacute;m Đ&ocirc;ng Y cũng như c&aacute;c cơ sở sản xuất, dịch vụ sử dụng dược liệu Đ&ocirc;ng Y tr&ecirc;n to&agrave;n quốc. Chất lượng dược liệu của nh&agrave; thuốc lu&ocirc;n đảm bảo c&aacute;c y&ecirc;u cầu được đề ra của c&aacute;c ph&ograve;ng kh&aacute;m cũng như cơ sở sử dụng dược liệu.</div>
                             <div>&nbsp;</div>
                             <div>Nh&agrave; thuốc Đ&ocirc;ng Y toạ lạc tại quầy A7, số 59 Hải Thượng L&atilde;n &Ocirc;ng Phường 10 Quận 5 TPHCM (Si&ecirc;u thị Đ&ocirc;ng Y Quận 5)</div>    
+                            <div>&nbsp;</div>
+                            <img src='images/sieuthithuoc.jpg'/>
                     </div>
                 </div>
+
+                
 	        </div>
         );
     }
