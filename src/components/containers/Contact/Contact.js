@@ -12,9 +12,9 @@ class Contact extends React.Component {
                     <MapView
                             true
                             googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-                            loadingElement={<div style={{ height: `100%` }} />}
+                            loadingElement={<div style={{ height: '100%' }} />}
                             containerElement={<div className='mapView'/>}
-                            mapElement={<div className='mapEle' style={{ height: `100%` }} />}
+                            mapElement={<div className='mapEle' style={{ height: '100%' }} />}
                         />
                     <div className="contactCard">
                         <div className='firstback'></div>
@@ -46,7 +46,7 @@ class Contact extends React.Component {
                         <p>Chi nhánh Phan Đình Phùng</p>
                         <p>Chủ tài khoản:   Cao Khắc Lê Duy</p>
                         <p>Số tài khoản:    19030301701011</p>
-                    </div>    
+                    </div>
                 </div>
 
                 <div className='feedbackPanel'>

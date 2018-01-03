@@ -14,7 +14,8 @@ class DIntroCell extends React.Component {
           <span className={'lnr '+ this.props.icon}></span>
           <div className='introImgOverlay'/>
           <img src = {this.props.image} />
-          <div className='circleBack'></div>
+          <div className='circleBack'>
+          </div>
         </div>
         <div className='introText'>
           <h3> {this.props.title} </h3>

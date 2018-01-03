@@ -32,8 +32,11 @@
     margin: 0;
     display:table-cell;
     width: 20%;
+    height: auto;
     overflow: hidden;
-    background: black;
+    position: relative;
+    background-image: url('/images/3.jpeg');
+    background-repeat: no-repeat;
 }
 
 .textArea{
@@ -44,5 +47,35 @@
 }
 
 .textArea img {
+    width: 100%;
+}
+
+.lnr-store {
+    z-index: 4;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(13, 236, 143);
+    font-size: 48px;
+}
+
+@media screen and (max-width: 600px) {
+    .lnr-store {
+        z-index: 4;
+        top : 0px;
+        left: 20px;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        color: rgb(13, 236, 143);
+        font-size: 24px;
+    }
+}
+
+.iconHolder {
+    margin: auto;
+    position: relative;
+    padding: auto;
+    height: 100%;
     width: 100%;
 }

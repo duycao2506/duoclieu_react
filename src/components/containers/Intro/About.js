@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import {RaisedButton, TextField} from 'material-ui';
+
 require('./About.css');
 require('styles/App.css');
-import {RaisedButton, TextField} from 'material-ui';
+require('components/views/DIntroCell/DIntroCell.css');
 
 class About extends React.Component {
     render(){
@@ -9,6 +11,7 @@ class About extends React.Component {
             <div className='aboutHolder'>
 	            <div className='aboutCard'>
                     <div className='sideDeco'>
+                        <div className='introImgOverlay'/>
                     </div>
                     <div className='textArea textL'>
                             <h2>Về nhà thuốc</h2>

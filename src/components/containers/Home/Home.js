@@ -20,7 +20,7 @@ class Home extends React.Component {
                     title='Cung cấp'
                     description='SỈ và LẺ các loại dược liệu Đông Y, nhận hốt thuốc thang theo toa, bào chế thuốc đáp ứng yêu cầu. 
                     Chất lượng thuốc luôn được đảm bảo.'
-                    icon='lnr-store'
+                    icon='lnr-leaf'
                     />
                     
                     <DIntroCell 
