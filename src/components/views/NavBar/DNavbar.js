@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 require ('./DNavBar.css');
+import {  Link } from 'react-router-dom';
 
 class DNavBar extends React.Component {
     constructor(props, context){
@@ -10,15 +11,15 @@ class DNavBar extends React.Component {
         this.items = [];
     }
     render(){
-        console.log(this.props.location)
+        console.log(this.props.location);
         return (
             <div className="topnav" id="myTopnav" ref={(obj) => { this.myTopnav = obj}} >
-                <a href="/" className="navlogo"><img src="images/logo.png"/></a>
-                <a href="/" className="navbrand">Hiệp Thành Dược Hãng</a>
-                <a href="/about" className={'navitem' + (this.props.location.pathname == '/about' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Giới thiệu</a>
-                <a href="/contact" className={'navitem' + (this.props.location.pathname == '/contact' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Liên hệ</a>
-                <a href="/" className={'navitem' + (this.props.location.pathname == '/' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Trang chủ</a>
-                <a href="#" className="navigator icon" onClick={this.showMenu()}>&#9776;</a>
+                <Link to="/" className="navlogo"><img src="images/logo.png"/></Link>
+                <Link to="/" className="navbrand">Hiệp Thành Dược Hãng</Link>
+                <Link to="/about" className={'navitem' + (this.props.location.pathname == '/about' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Giới thiệu</Link>
+                <Link to="/contact" className={'navitem' + (this.props.location.pathname == '/contact' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Liên hệ</Link>
+                <Link to="/" className={'navitem' + (this.props.location.pathname == '/' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Trang chủ</Link>
+                <Link to="#" className="navigator icon" onClick={this.showMenu()}>&#9776;</Link>
             </div>
         )
     }

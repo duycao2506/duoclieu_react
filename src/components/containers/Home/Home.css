@@ -1,9 +1,12 @@
-.introHolder {
+.introHolder{
     background: rgb(246, 246, 246);
-    height: auto;
     width: auto;
-    display: block;
+    height: auto;
     z-index: 99;
     text-align: center;
     padding: 1px;
+};
+
+.home{
+    display: block;
 }

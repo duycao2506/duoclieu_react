@@ -21,12 +21,43 @@ let config = Object.assign({}, baseConfig, {
     new BowerWebpackPlugin({
       searchResolveModulesDirectories: false
     }),
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      uglifyOptions: {
+        compress: {
+          unused: false
+        }
+      }
+    }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.NoErrorsPlugin()
   ],
-  module: defaultSettings.getDefaultModules()
+  module: defaultSettings.getDefaultModules(),
+  // output: {
+  //   publicPath: '/'
+  // },
+  devServer: {
+    contentBase: path.join(__dirname, '/'),
+        compress: true,
+        watchContentBase: true,
+        watchOptions: {
+            poll: true
+        },
+        historyApiFallback: true,
+        historyApiFallback: {
+            // rewrites: [
+            //     { from: /^\/tacos/, to: '/index.html' },
+            // ],
+            index: '/index.html'
+        },
+        proxy: {
+            '/*': {
+                target: 'http://localhost',
+                pathRewrite: { '^/tacos': '' }
+            }
+        }
+        
+  }
 });
 
 // Add needed loaders to the defaults here

@@ -1,171 +1,200 @@
-.contactPanel{
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    z-index: 100;
+.contactPanel {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  z-index: 100;
 }
 
-.firstback{
-    background: #312619;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
-    left: 0;
-    opacity: 0.95;
-    z-index: 95;
+.firstback {
+  background: #312619;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  left: 0;
+  opacity: 0.95;
+  z-index: 95;
 }
 
 .contactCard img {
-    position: relative;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 94;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 94;
+  width: 100%;
+  height: 500px;
 }
 
-.contactCard{
-    width: 40%;
-    height: 100%;
-    display: inline-block;
-    position: absolute;
-    z-index: 99;
-    left: 60%;
-    margin: 0px;
-    overflow: hidden;
-    box-shadow: -4px 0 4px 0px rgba(0, 0, 0, 0.2); 
-    
+.contactCard {
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
+  left: 60%;
+  margin: 0px;
+  overflow: hidden;
+  box-shadow: -4px 0 4px 0px rgba(0, 0, 0, 0.2);
+
 }
 
-.contactcontent{
-    height: 100%;
-    width: auto;
-    position: absolute;
-    top: 10%;
-    z-index: 96;
-    text-align: left;
-    overflow: hidden;
+.contactcontent {
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 10%;
+  z-index: 96;
+  text-align: left;
+  overflow: hidden;
 }
 
 .contactcontent h3 {
-    color:rgb(30, 194, 128);
-    margin-left: 12px;
+  color: rgb(30, 194, 128);
+  margin-left: 12px;
+}
+
+.contactcontent a {
+    color:  rgb(24, 230, 117);
 }
 
 
 .contactcontent h4 {
-    color:#ecb676;
+  color: #ecb676;
 }
 
 .contactcontent h4::before {
-    float: left;
-    width: 4px;
-    background: #ecb676;
-    display: block;
-    content : '';
-    margin-right: 8px;
-    overflow: hidden;
-    height: 16px;
+  float: left;
+  width: 4px;
+  background: #ecb676;
+  display: block;
+  content: '';
+  margin-right: 8px;
+  overflow: hidden;
+  height: 16px;
 }
 
 .contactcontent p {
-    margin-left: 12px;
-    
-    padding-right: 20%;
-    overflow: hidden;
-    font-weight: 200;
+  margin-left: 12px;
+  padding-right: 20%;
+  overflow: hidden;
+  font-weight: 200;
 
 }
 
 .mapView {
-    width: 60%;
-    position: absolute;
-    height: 400px;
-    z-index: 76;
-    display: inline-block;
+  width: 60%;
+  position: absolute;
+  height: 500px;
+  z-index: 76;
+  display: inline-block;
 }
 
 
-@media screen and (max-width: 600px) {
-    .mapView {
-        width: 100%;
-        position: relative;
-        height: 400px;
-    }
-
-    .contactCard{
-        position: relative;
-        width: 100%;
-        left: 0;
-    }
-
-    .contactPanel{
-        height: 800px;
-    }
-}
-
-.feedbackPanel{
-    text-align: center;
-    height: auto;
+@media(max-width: 700px) {
+  .mapView {
     width: 100%;
-    background: #eeeeee;
-    color: #312619;
     position: relative;
-    z-index: 99;
-    padding: 1px;
+    height: 500px;
+  }
+
+  .contactCard {
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin-bottom: -4px;
+    margin-top: -4px;
+  }
+
+  .contactPanel {
+    height: auto;
+  }
+
 }
 
-.feedbackPanel  h2{
-    text-align: center;
-    margin: 0;
+.feedbackPanel {
+  text-align: center;
+  height: auto;
+  width: 100%;
+  background: #eeeeee;
+  color: #312619;
+  position: relative;
+  z-index: 99;
+  padding: 1px;
+}
+
+.feedbackPanel h2 {
+  text-align: center;
+  margin: 0;
 }
 
 #agrb {
-    color: rgb(197, 3, 3);
-}
-#agrb::before {
-    background: rgb(197, 3, 3);
+  color: rgb(197, 3, 3);
 }
 
-#vpb {
-    color: rgb(136, 3, 197);
+#agrb::before {
+  background: rgb(197, 3, 3);
 }
-#vpb::before {
-    background: rgb(136, 3, 197);
+
+#sacb {
+  color: rgb(5, 142, 233);
+}
+
+#sacb::before {
+  background: rgb(5, 142, 233);
 }
 
 #techb {
-    color: rgb(255, 19, 19);
+  color: rgb(255, 19, 19);
 }
+
 #techb::before {
-    background: rgb(255, 19, 19);
+  background: rgb(255, 19, 19);
 }
 
 
 .feedbackPanel h3::before {
-    float: left;
-    width: 8px;
-    background: #ecb676;
-    display: block;
-    content : '';
-    margin-right: 8px;
-    overflow: hidden;
-    height: 16px;
+  float: left;
+  width: 8px;
+  background: #ecb676;
+  display: inline-block;
+  content: '';
+  margin-right: 8px;
+  overflow: hidden;
+  height: 16px;
 }
 
 
 
-.contactContainer{
-    height: 100%;
-    width: 100%;
+.contactContainer {
+  height: 100%;
+  width: 100%;
 }
 
 .inputRow {
-    width: 100%;
-    display: inline-block;
+  width: 100%;
+  display: inline-block;
 }
 
+.bankPanel {
+  display: block;
+  width: inherit;
+  height: auto;
+}
 
+.bankAccount {
+  margin-top: 16px;
+  width: 100%;
+  height: auto;
+}
 
+@media screen and (min-width: 700px) {
+  .bankAccount {
+    margin-top: 16px;
+    display: inline-block;
+    width: 33.33%;
+    height: auto;
+  }
+}

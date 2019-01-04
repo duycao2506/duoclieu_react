@@ -1,9 +1,15 @@
 /* Base Application Styles */
 body {
   color: #fff;
-  background: #fff;
-  font-family: 'Exo', sans-serif;
+  background: #eee;
+  font-family: "Exo", sans-serif;
 }
+
+.parent {
+  height: 100%;
+  display: block;
+}
+
 
 .index img {
   margin: 40px auto;

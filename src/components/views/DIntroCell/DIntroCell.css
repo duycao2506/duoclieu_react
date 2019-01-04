@@ -6,7 +6,7 @@
     height: 412px;
     overflow: hidden;
     color: #5a3912;
-    margin: 20px 10px 20px 10px;
+    margin: 20px 10px;
 }
 
 .introCell:hover{
@@ -39,7 +39,6 @@
     position: absolute;
     width: auto;
     height: 100%;
-    
 }
 
 .introImgOverlay {
@@ -73,8 +72,9 @@
     z-index: 4;
     top : 4.5rem;
     left: 0.1rem;
+    display: table;
+    margin: 0 auto;
     position: relative;
-    text-align: center;
     vertical-align: middle;
     color: rgb(13, 236, 143);
     font-size: 48px;

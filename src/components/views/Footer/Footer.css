@@ -5,6 +5,7 @@
     text-align: center; 
     display:inline-block;
     padding-top: 10px;
+    position: relative;
     padding-bottom: 10px;
     bottom: 0px;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './DIntroCell.css';
+require('./DIntroCell.css');
 
 class DIntroCell extends React.Component {
   constructor(props, context)

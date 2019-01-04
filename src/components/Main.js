@@ -2,14 +2,12 @@ require('normalize.css/normalize.css');
 require('styles/App.css');
 
 import DNavBar from 'components/views/NavBar/DNavBar'
-import theme from 'styles/AppBar.css';
 
 
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 
 import Home from 'components/containers/Home/Home';
@@ -18,7 +16,6 @@ import Contact from 'components/containers/Contact/Contact';
 import Footer from 'components/views/Footer/Footer';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import PropTypes from 'prop-types';
 import { withRouter } from 'react-router';
 
 
@@ -31,11 +28,11 @@ class AppComponent extends React.Component {
     return (
       <MuiThemeProvider>
         <Router>
-          <div>
+          <div className="parent">
             <Navbar/>
             <Route exact path="/" component={Home}/>
-            <Route path="/about" component={About}/>
-            <Route path="/contact" component={Contact}/>
+            <Route exact path="/about" component={About}/>
+            <Route exact path="/contact" component={Contact}/>
             <Footer/>
           </div>
         </Router>
