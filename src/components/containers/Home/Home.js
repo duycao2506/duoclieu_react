@@ -1,6 +1,6 @@
 import React from 'react';
-import DSlides from 'components/views/DSlides/DSlides';
-import DIntroCell from 'components/views/DIntroCell/DIntroCell';
+import DSlides from '../../views/DSlides/DSlides';
+import DIntroCell from '../../views/DIntroCell/DIntroCell';
 require('./Home.css');
 
 class Home extends React.Component {

@@ -1,6 +1,8 @@
 import React from 'react';
-require('./DSlidesEle.css');
+
 import PropTypes from 'prop-types';
+
+require('./DSlidesEle.css');
 
 
 class DSlidesEle extends React.Component {

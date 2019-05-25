@@ -1,5 +1,5 @@
 import React from 'react';
-import {  withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
+import {  withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 
 class MapView extends React.Component {
   static propTypes = {

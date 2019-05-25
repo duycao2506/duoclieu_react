@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './DSlides.css';
-import DSlidesEle from 'components/views/DSlides/DSlidesEle/DSlidesEle';
+import DSlidesEle from './DSlidesEle/DSlidesEle';
 import Carousel from 're-carousel';
-import IndicatorDots from 'components/views/DSlides/Indicatordots';
+import IndicatorDots from './Indicatordots';
 
 class DSlides extends React.Component {
   constructor(props, context){

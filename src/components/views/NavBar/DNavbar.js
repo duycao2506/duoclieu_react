@@ -1,9 +1,7 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
-require ('./DNavBar.css');
 import {  Link } from 'react-router-dom';
-
+require ('./DNavBar.css');
 class DNavBar extends React.Component {
     constructor(props, context){
         super(props, context);
@@ -14,7 +12,7 @@ class DNavBar extends React.Component {
         console.log(this.props.location);
         return (
             <div className="topnav" id="myTopnav" ref={(obj) => { this.myTopnav = obj}} >
-                <Link to="/" className="navlogo"><img src="images/logo.png"/></Link>
+                <Link to="/" className="navlogo"><img src='/images/logo.png'/></Link>
                 <Link to="/" className="navbrand">Hiệp Thành Dược Hãng</Link>
                 <Link to="/about" className={'navitem' + (this.props.location.pathname == '/about' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Giới thiệu</Link>
                 <Link to="/contact" className={'navitem' + (this.props.location.pathname == '/contact' ? '_selected' : '')} ref={(obj) => {this.items.push(obj)}} >Liên hệ</Link>

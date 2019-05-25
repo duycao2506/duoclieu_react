@@ -1,8 +1,8 @@
 import React from 'react'
-import MapView from 'components/views/MapView/MapView'
+import MapView from '../../views/MapView/MapView'
 
 require ('./Contact.css');
-require('styles/App.css');
+require('../../../styles/App.css');
 class Contact extends React.Component {
     render(){
         return (
@@ -113,7 +113,7 @@ class Contact extends React.Component {
                         </div>
 
                         <div className='inputRow'>
-                            <RaisedButton label="Gửi"  backgroundColor='rgb(30, 194, 128)' labelColor='#ffffff'  />
+                            <Button label="Gửi"  backgroundColor='rgb(30, 194, 128)' labelColor='#ffffff'  />
                         </div>
                     </div>
                     

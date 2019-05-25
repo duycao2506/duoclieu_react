@@ -1,9 +1,9 @@
 import React from 'react';
-import {RaisedButton, TextField} from 'material-ui';
+import {Button, TextField} from '@material-ui/core';
 
 require('./About.css');
-require('styles/App.css');
-require('components/views/DIntroCell/DIntroCell.css');
+require('../../../styles/App.css');
+require('../../views/DIntroCell/DIntroCell.css');
 
 class About extends React.Component {
     render(){

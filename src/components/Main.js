@@ -1,7 +1,4 @@
-require('normalize.css/normalize.css');
-require('styles/App.css');
-
-import DNavBar from 'components/views/NavBar/DNavBar'
+import DNavBar from './views/NavBar/DNavbar';
 
 
 import React from 'react';
@@ -10,13 +7,18 @@ import {
   Route
 } from 'react-router-dom';
 
-import Home from 'components/containers/Home/Home';
-import About from 'components/containers/Intro/About';
-import Contact from 'components/containers/Contact/Contact';
-import Footer from 'components/views/Footer/Footer';
+import Home from './containers/Home/Home';
+import About from './containers/Intro/About';
+import Contact from './containers/Contact/Contact';
+import Footer from './views/Footer/Footer';
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import { withRouter } from 'react-router';
+
+
+
+// require('normalize.css/normalize.css');
+require('../styles/App.css');
 
 
 // let yeomanImage = require('../images/yeoman.png');
